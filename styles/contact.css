@@ -1,0 +1,40 @@
+.contact
+{
+    background-color: var(--secondary-bg-color);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.contact__title, .contact__text, .contact__button
+{
+    background: var(--text-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact__title
+{
+    margin-top: 2em;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.contact__text
+{
+    font-weight: 300;
+    padding: 1em;
+}
+
+.contact__button
+{
+    padding: 1em;
+    border: 1px solid rgba(2,0,36,1);
+    border-radius: 24px;
+    width: 90%;
+    text-decoration: none;
+    margin-bottom: 2em;
+}

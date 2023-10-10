@@ -1,0 +1,81 @@
+.header__menu
+{
+    width: 46px;
+    height: 46px;
+    background-image: url(../images/menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    display: inline-block;
+}
+
+.header 
+{
+    background-color: var(--secondary-bg-color);
+    position: relative;
+}
+
+.container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container__image__menu
+{
+    padding: 1em;
+    width: 40px;
+    height: 40px;
+}
+
+.container__image__travel
+{
+    width: 50px;
+    padding: 1em;
+}
+
+.container__image__profile
+{
+    width: 40px;
+    padding: 1em;
+}
+
+.list-menu
+{
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+}
+
+.container__menu__button:checked ~ .list-menu
+{
+    display: block;
+}
+
+.list-menu__title, .list-menu__item
+{
+    padding: 1em;
+    background-color: var(--secondary-bg-color);
+}
+
+.list-menu__title
+{
+    font-weight: 700;
+    color: var(--highlighted-text-color)
+}
+
+.list-menu__link
+{
+    background: var(--text-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
+
+.container__menu__button 
+{
+    display: none;
+}

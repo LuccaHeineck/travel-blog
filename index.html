@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Journeys</title>
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__menu__button">
+            <label for="menu">
+                <span class="header__menu container__image__menu"></span>
+            </label>
+            <ul class="list-menu">
+                <li class="list-menu__title">Travels</li>
+                <li class="list-menu__item">
+                    <a href="#favorites" class="list-menu__link">My favorites</a>
+                </li>
+                <li class="list-menu__item">
+                    <a href="#adventures" class="list-menu__link">Adventures</a>
+                </li>
+                <li class="list-menu__item">
+                    <a href="#brazil" class="list-menu__link">Brazil</a>
+                </li>
+            </ul>
+            <img class="container__image__travel" src="images/travel.png" alt="Plane travelling around the world">
+            <img class="container__image__profile" src="images/profile.svg" alt="My profile">
+        </div>
+    </header>
+    <section class="banner">
+        <h2 class="banner__title">Where?</h2>
+        <p class="banner__text">Type here</p>
+        <input type="text" class="banner__input" placeholder="Search...">
+    </section>
+
+    <section class="carousel" id="favorites">
+        <h2 class="carousel__title">My Favorites</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="images/bruges.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/toronto.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/paris.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/newyork.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/rio.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/bahamas.png" alt=""></div>
+            </div>
+                
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        <div class="card">
+            <div class="card__description">
+                <div class="description">
+                    <h3 class="description__title">You might be interested...</h3>
+                    <h2 class="description__travel-title">Brussels</h2>
+                    <p class="description__text">Waffles, chocolate, beer, fries and much more...</p>
+                    <div class="card__button">
+                        <a class="card__button__link" href="#">Check out</a>
+                    </div>
+                </div>
+                <img src="images/brusselscard.png" alt="">
+                
+            </div>
+        </div>
+
+        <section class="carousel" id="adventures">
+            <h2 class="carousel__title">Adventures</h2>
+            <!-- Slider main container -->
+            <div class="swiper">
+    
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="images/niagara.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/florianopolis.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/praiagrande.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/bariloche.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/atacama.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/beto.png" alt=""></div>
+                </div>
+                    
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+    
+            <div class="card">
+                <div class="card__description">
+                    <div class="description">
+                        <h3 class="description__title">You might be interested...</h3>
+                        <h2 class="description__travel-title">Montevideo</h2>
+                        <p class="description__text">Where history meets modern charm</p>
+                        <div class="card__button">
+                            <a class="card__button__link" href="#">Check out</a>
+                        </div>
+                    </div>
+                    <img src="images/montevideocard.png" alt="">
+                    
+                </div>
+            </div>
+
+            <h2 class="carousel__title" id="brazil">Brazil</h2>
+            <div class="swiper">
+    
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="images/bonito.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/gramado.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/fortaleza.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/torres.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/bonito.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/balneario.png" alt=""></div>
+                </div>
+                    
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+    </section>
+
+    <section class="contact">
+        <h2 class="contact__title">Contact me!</h2>
+        <p class="contact__text">For any questions or suggestions</p>
+        <a class="contact__button" href="mailto:luccacheineck@gmail.com">Email me</a>
+    </section>
+    
+    <footer class="footer">
+        <h2 class="footer__title">Developed by Lucca Heineck</h2>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+          });
+    </script>
+</body>
+
+</html>
