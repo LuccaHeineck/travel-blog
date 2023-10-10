@@ -9,11 +9,12 @@
 {
     --font: 'Outfit', sans-serif;
 
-    --background-color: #EBECEE;   
-    --secondary-bg-color: #ffffff;
-    --text-color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(18,18,129,1) 100%);
-    --highlighted-text-color: #EB9B00;
-    --secondary-text-color: #002f52;
+    --background-color: #D1D1D1;   
+    --secondary-bg-color: #EFEFEF;
+    --highlighted-text-color: #C0A080;
+    --secondary-text-color: #7882A4;
+    /* --text-color: #4a6e7e; */
+    --text-color: linear-gradient(90deg,#7882A4 0%, #abb1c7 100%);
 }
 
 body
