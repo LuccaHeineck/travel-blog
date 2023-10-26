@@ -1,5 +1,6 @@
 .contact
 {
+    margin-top: 3em;
     background-color: var(--secondary-bg-color);
     padding: 1em;
     display: flex;
@@ -38,4 +39,37 @@
     width: 90%;
     text-decoration: none;
     margin-bottom: 2em;
+}
+
+@media screen and (min-width: 1024px)
+{
+    .contact
+    {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 3em 0;
+        gap: 2em;
+    }
+
+    .contact__title
+    {
+        margin: 0;
+        font-size: 24px;
+    }
+
+    .contact__button
+    {
+        margin-bottom: 0;
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1728px)
+{
+    .contact
+    {
+        padding: 4em 20vw;
+    }
 }

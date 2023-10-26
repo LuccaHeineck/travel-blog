@@ -28,8 +28,14 @@
                     <a href="#brazil" class="list-menu__link">Brazil</a>
                 </li>
             </ul>
-            <img class="container__image__travel" src="images/travel.png" alt="Plane travelling around the world">
-            <img class="container__image__profile" src="images/profile.svg" alt="My profile">
+            <div class="container__logo">
+                <img class="container__image__travel" src="images/travel.png" alt="Plane travelling around the world">
+                <h1 class="container__title">My <b>Journeys</b></h1>
+            </div>
+            <div class="container__aboutme">
+                <img class="container__image__profile" src="images/profile.svg" alt="My profile">
+                <h2 class="container__title__2"><b>About me</b></h1>
+            </div>
         </div>
     </header>
     <section class="banner">
@@ -41,6 +47,8 @@
     <section class="carousel" id="favorites">
         <h2 class="carousel__title">My Favorites</h2>
         <!-- Slider main container -->
+
+        <div class="carousel__container">
         <div class="swiper">
 
             <!-- If we need pagination -->
@@ -71,14 +79,17 @@
                         <a class="card__button__link" href="#">Check out</a>
                     </div>
                 </div>
-                <img src="images/brusselscard.png" alt="">
-                
+                <div class="card__img">
+                    <img src="images/brusselscard.png" alt="">
+                </div>
             </div>
         </div>
+    </div>
 
         <section class="carousel" id="adventures">
             <h2 class="carousel__title">Adventures</h2>
             <!-- Slider main container -->
+            <div class="carousel__container">
             <div class="swiper">
     
                 <!-- If we need pagination -->
@@ -109,12 +120,15 @@
                             <a class="card__button__link" href="#">Check out</a>
                         </div>
                     </div>
-                    <img src="images/montevideocard.png" alt="">
-                    
+                    <div class="card__img">
+                        <img src="images/montevideocard.png" alt="">
+                    </div>
                 </div>
             </div>
-
+        </div>
+       
             <h2 class="carousel__title" id="brazil">Brazil</h2>
+            <div class="carousel__brazil">
             <div class="swiper">
     
                 <!-- If we need pagination -->
@@ -134,6 +148,7 @@
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
             </div>
+        </div>
     </section>
 
     <section class="contact">

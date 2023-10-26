@@ -10,3 +10,16 @@
     color: var(--secondary-bg-color);
     font-weight: 400;
 }
+
+@media screen and (min-width: 1024px)
+{
+    .footer
+    {
+        padding: 4em ;
+    }
+
+    .footer__title
+    {
+        font-size: 24px;
+    }
+}
